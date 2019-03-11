@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include<string.h>
+//test
 
 int main(){
     char input[100];
