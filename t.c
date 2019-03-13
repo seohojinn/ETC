@@ -1,17 +1,21 @@
-#include<stdio.h>
-#define N 5
-
-int a[10];
+#include <stdio.h>
 
 int main(){
-    printf("%d\n",sizeof(a));
+    int size=0;
+    
+    scanf("%d",&size);
+    for(int i=0;i<size;i++){
+        for(int j=(size-i)-1;j>0;j--){
+            printf(" ");
+        }
+        for(int j=0;j<(i+1)*2-1;j++){
+            printf("*");
+        }
+       
 
-    int b;
-    scanf("%d",&b);
-    for(int i=0;i<b;i++){
-        scanf("%d",&a[i]);
+        printf("\n");
     }
-    printf("%d\n",sizeof(a));
+
 
     return 0;
 }
