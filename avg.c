@@ -7,7 +7,7 @@ int main(){
     int subject=0;
     int M=0;
     float sum=0;
-    float age;
+    float avg;
     scanf("%d",&subject);
     value=(int*)(malloc(sizeof(int)*subject));
     
@@ -23,8 +23,8 @@ int main(){
     for(int i=0;i<subject;i++){
         sum+=((float)value[i]/M)*100;
     }
-    age=sum/subject;
-    printf("%.2f\n",age);
+    avg=sum/subject;
+    printf("%.2f\n",avg);
 
     return 0;
 }
