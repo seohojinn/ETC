@@ -69,5 +69,6 @@ int main(){
         }
         memset(commend,'\0',sizeof(commend));
     }
+    free(arr);
     return 0;
 }
